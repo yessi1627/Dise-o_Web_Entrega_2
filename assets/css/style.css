@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1B293B;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #171420;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-area img {
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: auto; 
+}
+
+
+.nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffffcc;
+  font-weight: 400;
+  transition: 0.3s;
+  font-size: 19px;
+}
+
+.nav a:hover,.nav a.active {
+  color: #1f6bff;
+  font-weight: 500;
+}
+
+.acciones {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+i {
+  color: white;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.idioma {
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+  color: white;
+}
+.hero {
+  padding: 5rem 2rem;
+  background: #1B293B;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+  color: #1f6bff;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #ffffffcc;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #1f6bff;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #0b0f1a;
+}
+
+.btn-secundary {
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 0.9rem 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-color:#FFFFFF;
+}
+
+.btn-secundary:hover {
+  background-color: #1958d0;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.beneficios {
+  background-color:#171420;
+  padding: 4rem 2rem;
+ 
+}
+
+.beneficios-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.beneficios-header h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.beneficios-header p {
+  color: #fff;
+  max-width: 600px;
+  font-size: 1rem;
+}
+
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+
+}
+.grid-beneficios .card{
+  background-color:#1B293B;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: none;
+  
+}
+
+.grid-beneficios .card i {
+    background-color: #fff;     
+    color: #1D72D1;              
+    font-size: 24px;              
+    width: 60px;                  
+    height: 60px;                 
+    border-radius: 50%;          
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    margin-bottom: 15px;           
+}
+
+.card i {
+  font-size: 1.8rem;
+  color: #1f6bff;
+}
+
+
+.card i h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Rendimiento */
+.rendimiento {
+  background-color:#171420;
+  padding: 4rem 2rem;
+}
+
+.rendimiento-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 15PX;
+}
+
+.tag {
+  background-color: #11203a;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #0f1c2e;
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+
+}
+
+rendimiento-grid, .tag i {
+    background-color: #fff;     
+    color: #1D72D1;              
+    font-size: 24px;              
+    width: 60px;                  
+    height: 60px;                 
+    border-radius: 50%;          
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    margin-bottom: 15px;           
+}
+
+
+.contenido h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contenido p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.clientes-section {
+  background-color: #112240;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.container-clientes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+.clientes-logos {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.rendimiento .contenido .mini_texto{
+  color: #1D72D1;
+}
+
+.hero-planes { 
+  color: #ffffff;
+  
+}
+
+.contenedor-hero {
+  max-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  
+}
+
+.contenido-texto {
+  flex: 1 1 50%;
+  margin-bottom: -10px;
+}
+
+.contenido-texto h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-left: 200px;
+
+}
+
+
+.contenido-texto p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin-left: 200px;
+  text-align: justify;
+
+}
+
+.contenedor-imagen {
+  flex: 1 1 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* alinea elementos al fondo */
+  justify-content: center;
+}
+
+.curva-fondo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.imagen-principal {
+  max-width: 80%;
+  height: auto;
+  z-index: 1;
+  transform: translatex(420px);
+
+}
+
+figure{
+  margin-top: -100px;
+}
+
+/* Estilos generales del contenedor */
+.Container-general{
+  background-color: #171420;
+
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+ 
+} 
+
+/* Estilo base de las tarjetas */
+.tarjeta {
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Estilo del título y párrafo */
+.tarjeta h3 {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #1D72D1;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #1B293B;
+}
+
+/* 📷 Imagen del servidor */
+.tarjeta img {
+    width: auto;
+    margin: 15px 0;
+}
+
+/* ✅ Lista de características */
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.tarjeta li {
+    font-size: 0.9rem;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.tarjeta i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* 💰 Precios */
+.precio {
+    margin: 10px 0;
+}
+
+.precio .descuento {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.precio .valor {
+    font-size: 1.4rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 🔵 Botón */
+.tarjeta button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    background: #0056b3;
+}
+
+/* 📍 Posiciones de las tarjetas para simular el carrusel */
+.tarjeta-central {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+.tarjeta-izq-1 {
+    left: 20%;
+    transform: scale(0.95);
+    z-index: 4;
+}
+
+.tarjeta-izq-2 {
+    left: 5%;
+    transform: scale(0.85);
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.tarjeta-der-1 {
+    right: 20%;
+    transform: scale(0.95);
+    z-index: 4;
+}
+
+.tarjeta-der-2 {
+    right: 5%;
+    transform: scale(0.85);
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.recomendaciones-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+    margin-top: -100px;
+}
+
+/* Estilo general de cada tarjeta */
+.recomendacion-card {
+    background: #fff;
+    width: 450px;
+    height: 300px;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgba(65, 95, 214, 0.15); /* sombra azul */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Íconos delicados */
+.recomendacion-icon i {
+    font-size: 28px;
+    color: #171420;
+    margin-bottom: 16px;
+}
+
+/* Título */
+.recomendacion-titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #171420;
+}
+
+/* Texto */
+.recomendacion-texto {
+    font-size: 0.95rem;
+    color: #171420;
+    margin-bottom: 30px;
+    
+}
+
+/* Botón */
+.recomendacion-boton {
+    background: #007bff;
+    width: 400px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.recomendacion-boton:hover {
+    background: #1B293B;
+}
+
+/* Posición escalonada */
+.card-escalon-der {
+    margin-top: 100px;
+}
+
+.card-escalon-izq {
+    margin-top: -1px;
+    margin-bottom: 130px;
+}
+.testimonios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos generales de la sección */
+.testimonios-slider {
+    background-color: #1B293B;
+    padding: 60px 20px;
+    color: white;
+}
+
+
+.testimonios-titulo {
+    text-align: center;
+    font-size: 36PX;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* Cards */
+.testimonios-cards {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.testimonios-card {
+    background-color: #171420;
+    padding: 50px;
+    flex: 1 1 calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Card de texto */
+.testimonios-stars i {
+    color: #f3b523;
+    margin-bottom: 30px;
+}
+
+.testimonios-parrafo {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #FFF;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    text-align: justify;
+   
+}
+
+.testimonios-autor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonios-autor-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.testimonios-autor-nombre {
+    color: #1f6bff;
+    line-height: 2;
+    font-weight: bold;
+    display: block;
+}
+
+.testimonios-autor-profesion {
+    font-size:15px;
+    color:#fff;
+}
+
+/* Controles */
+.testimonios-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.testimonios-flecha {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.testimonios-puntos {
+    display: flex;
+    gap: 8px;
+}
+
+.testimonios-puntos span {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.testimonios-puntos .activo {
+    background-color: #1f6bff;
+}
+
+/* Botón */
+.testimonios-boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-ver-mas {
+    background-color: #1f6bff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.faqs-section {
+    padding: 40px;
+    background-color: #171420;
+    text-align: center;
+}
+
+/* Encabezado */
+.faqs-header h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Contenedor de tarjetas */
+.faqs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+.faqs-card {
+    background: #fff;
+    width: 300px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 255, 0.3); /* sombra azul abajo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+    color: #171420;
+    text-align: justify;
+    
+}
+
+.faqs-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Iconos */
+.faqs-icon {
+    font-size: 40px;
+    color: #1f6bff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* Títulos */
+.faqs-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.faqs-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+/* Sección principal */
+.seccion-faqs {
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Cada item FAQ */
+.faq-item {
+  border: 1px solid #ffffff; /* línea divisoria azul grisácea */
+}
+
+/* Pregunta */
+.faq-pregunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #cfd9e6;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-pregunta:hover {
+  background-color: #1f6bff;
+}
+
+/* Icono */
+.icono-faq {
+  color: #1f6bff;
+  font-size: 14px;
+}
+
+/* Respuesta */
+.faq-respuesta {
+  display: none;
+  padding: 0 20px 15px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #171420;
+ 
+}
+
+/* FAQ activo */
+.faq-item.activo .faq-respuesta {
+  display: block;
+  background-color: #fff;
+}
+
+.faq-item.activo .faq-pregunta {
+  font-weight: bold;
+  color: #171420;
+  background-color: #fff;
+}
+
+/* Encabezado */
+.contactenos-encabezado {
+  text-align: center;
+  color: #ffffff;
+  margin: 50px 20px;
+}
+
+.contactenos-encabezado h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 150px;
+}
+
+/* Grid de tarjetas */
+.contactenos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+/* Tarjeta */
+.contactenos-tarjeta {
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 70px 20px 30px;
+  position: relative;
+}
+
+/* Foto circular */
+.contactenos-foto {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Nombre */
+.contactenos-tarjeta h3 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #171420;
+}
+
+/* Cargo */
+.contactenos-cargo {
+  font-size: 14px;
+  color: #171420;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Descripción */
+.contactenos-descripcion {
+  font-size: 14px;
+  color: #171420;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+/* Botón */
+.contactenos-boton {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+}
+
+.contactenos-boton:hover {
+  background-color: #1B293B;
+}
+.formulario-contacto-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Contenedor con dos columnas */
+.formulario-contacto-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #2d3e50; /* Azul grisáceo */
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Columna izquierda */
+.formulario-contacto-izquierda {
+  padding: 40px;
+  color: #ffffff;
+}
+
+.formulario-contacto-encabezado h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.formulario-contacto-encabezado p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+.formulario-contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Campos dobles (nombre y apellido) */
+.formulario-contacto-doble {
+  display: flex;
+  gap: 15px;
+}
+
+.formulario-contacto-doble input {
+  flex: 1;
+}
+
+/* Inputs y textarea */
+.formulario-contacto-formulario input,
+.formulario-contacto-formulario textarea {
+  background-color: transparent;
+  border: 1px solid #8a9baa;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.formulario-contacto-formulario input::placeholder,
+.formulario-contacto-formulario textarea::placeholder {
+  color: #b0c4d4;
+}
+
+/* Botón */
+.formulario-contacto-boton {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.formulario-contacto-boton:hover {
+  background-color: #0b5ed7;
+}
+
+/* Columna derecha (imagen) */
+.formulario-contacto-derecha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+.footer_planes{
+    position: relative;
+    overflow: hidden;
+    
+}
+.footer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.footer-bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px; 
+    text-align: justify;
+   
+}
+
+
+.footer-col {
+    flex: 1;
+    margin: 0 20px;   
+}
+
+.footer-col h3 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+
+.footer-col p,.footer-col a {
+    font-size: 0.95rem;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 23px;
+}
+
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+     margin-bottom: 23px;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    
+}
+
+.social-icons a {
+    background-color: #1D72D1;
+    width: 40px;
+    height: 40px;
+    align-items:center;
+    display: flex;
+    justify-content:right;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #1B293B;
+}
+
+.footer-col p i {
+    margin-right: 15px;
+    color: #fff;
+    
+}
+
+

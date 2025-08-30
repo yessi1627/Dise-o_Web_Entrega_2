@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARKDI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+
+    <!-- Maquetación nanvar-->
+    <header class="header">
+      <div class="container">
+        <div class="logo-area">
+          <img id="logoImg" src="../assets/images/logo.svg"  alt="Logo de empresa MARKDI"/>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="../pages/planes.html">Planes</a></li>
+            <li><a href="../pages/testimonios.html">Testimonios</a></li>
+            <li><a href="../pages/faqs.html">FAQS</a></li>
+            <li><a href="../pages/contactenos.html">Contáctenos</a></li>
+          </ul>
+        </nav>
+        <div class="acciones">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-globe"></i>
+          <span class="idioma">ES</span>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Maquetación del hero-->
+    <section class="hero-planes" aria-labelledby="titulo-planes">
+      <div class="contenedor-hero">
+        <div class="contenido-texto">
+          <h1 id="titulo-planes">Hablemos sobre tu <br />próximo proyecto en la nube</h1>
+          <br /><br /><br /><br />
+          <p>
+            En MARKDI estamos listos para escucharte y ayudarte a encontrar la
+            solución de alojamiento perfecta para tu negocio. Escríbenos y
+            recibe asesoría personalizada de nuestro equipo de expertos.
+          </p>
+        </div>
+        <figure class="contenedor-imagen">
+          <img src="../assets/images/curva_header.svg" alt="imagen decorativa de curva" class="curva-fondo" aria-hidden="true"/>
+          <img src="../assets/images/hero_contactenos.svg" alt="Imagen de planes" class="imagen-principal"/>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Maquetación del equipo de contacto-->
+    <section class="contactenos-seccion">
+      <div class="contactenos-encabezado">
+        <h2>Conoce a tu equipo de soporte y<br />asesoría MARKDI</h2>
+      </div>
+
+      <!-- Maquetación de asesores -->
+      <div class="contactenos-grid">
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Laura_gomez.svg" alt="Laura Gómez" class="contactenos-foto"/>
+          <h3>Laura Gómez</h3>
+          <p class="contactenos-cargo">Especialista en Soluciones Cloud</p>
+          <p class="contactenos-descripcion">Lista para ayudarte a encontrar el plan perfecto para tu negocio.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+
+
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Carlos_perez.svg" alt="Carlos Pérez" class="contactenos-foto"/>
+          <h3>Carlos Pérez</h3>
+          <p class="contactenos-cargo">Asesor Técnico Senior</p>
+          <p class="contactenos-descripcion">Resuelve tus dudas y te guía en cada paso de la migración.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+
+        
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Sofia_martinez.svg" alt="Sofía Martínez" class="contactenos-foto"/>
+          <h3>Sofía Martínez</h3>
+          <p class="contactenos-cargo">Consultora de Integraciones</p>
+          <p class="contactenos-descripcion">Te asesora para que tu infraestructura funcione sin interrupciones.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+
+       
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Andres_ramirez.svg" alt="Andrés Ramírez" class="contactenos-foto"/>
+          <h3>Andrés Ramírez</h3>
+          <p class="contactenos-cargo">Experto en Seguridad en la Nube</p>
+          <p class="contactenos-descripcion">Garantiza que tu información esté siempre protegida.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+
+       
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Daniela_herrera.svg" alt="Daniela Herrera" class="contactenos-foto"/>
+          <h3>Daniela Herrera</h3>
+          <p class="contactenos-cargo">Especialista en Optimización</p>
+          <p class="contactenos-descripcion">Te ayuda a aprovechar al máximo tu alojamiento.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+
+      
+        <article class="contactenos-tarjeta">
+          <img src="../assets/images/Juan_zolano.svg" alt="Juan Zolano" class="contactenos-foto"/>
+          <h3>Juan Zolano</h3>
+          <p class="contactenos-cargo">Project Manager</p>
+          <p class="contactenos-descripcion">Coordina y agiliza la implementación de tu proyecto en la nube.</p>
+          <button class="contactenos-boton">Contactar</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Maquetación formulario  de contacto-->
+    <section class="formulario-contacto-seccion">
+      <div class="formulario-contacto-contenedor">
+
+        <!-- Maquetación columna izquierda del formulario -->
+        <div class="formulario-contacto-izquierda">
+          <header class="formulario-contacto-encabezado">
+            <h2>Hablemos de tu próximo proyecto</h2>
+            <p>
+              En MARKDI queremos escucharte. Cuéntanos tus ideas, retos o
+              necesidades y nuestro equipo se pondrá en contacto contigo lo
+              antes posible para ayudarte a llevar tu negocio al siguiente
+              nivel.
+            </p>
+          </header>
+
+        <form class="formulario-contacto-formulario" action="#" method="POST">
+            <div class="formulario-contacto-doble">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+              <input type="text" name="apellido" placeholder="Apellido" required/>
+            </div>
+            <input type="email" name="correo" placeholder="Correo" required />
+            <input type="tel" name="telefono" placeholder="Teléfono de contacto" required/>
+            <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+
+            <button type="submit" class="formulario-contacto-boton">Enviar</button>
+        </form>
+        </div>
+
+        <!-- Maquetación columna derecha del formulario -->
+        <div class="formulario-contacto-derecha">
+          <img src="../assets/images/Form.svg" alt="Tecnología en la nube"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maquetación del footer-->
+<footer class="footer">
+    <div class="footer-bg">
+        <img src="../assets/images/curva_footer.svg" alt="Curva Footer">
+    </div>
+
+    <div class="footer-content">
+        <!-- Maquetación de columna 1 del footer-->
+        <div class="footer-col logo-col">
+            <img src="../assets/images/logo.svg" alt="MARKDI" class="footer-logo">
+            <p>En MARKDI, no solo ofrecemos infraestructura en la nube, garantizamos el crecimiento y la protección de tu empresa</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Maquetación de columna 2 del footer-->
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Cl. 121 #15a-50</p>
+            <p><i class="fas fa-envelope"></i> info@markdi.co</p>
+            <p><i class="fas fa-phone"></i> 3213116966</p>
+            <p><i class="fas fa-clock"></i> Agosto, 2025</p>
+        </div>
+
+        <!-- Maquetación de columna 3 del footer-->
+        <div class="footer-col">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Planes</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Agendamiento</a></li>
+            </ul>
+        </div>
+
+        <!-- Maquetación de columna 4 del footer-->
+        <div class="footer-col">
+            <h3>Soporte</h3>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</footer> 
+</body>
+</html>
