@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  @include mixins.container(vars.$max-width, vars.$container-padding);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: vars.$color-white; // Enlaces blancos
+  text-decoration: none;
+
+  &:hover {
+    color: vars.$color-primary; // Azul al pasar el mouse
+  }
+}
+
+
+

@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as vars;
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  color: vars.$color-white;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  color: vars.$color-white-cc;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$color-primary;   
+
+  &:hover {
+    color: vars.$color-secondary;
+  }
+}
