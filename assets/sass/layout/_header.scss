@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+/* Header (copiado del CSS viejo) */
+.header {
+  background-color: #171420;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-area img {
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: auto; 
+}
+
+/* acciones dentro de header (copiado) */
+.acciones {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* iconos (están en el CSS viejo; lo dejo donde estaba) */
+i {
+  color: white;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* idioma (también estaba en el CSS viejo) */
+.idioma {
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+  color: white;
+}
+

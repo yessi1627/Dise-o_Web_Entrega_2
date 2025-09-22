@@ -37,3 +37,10 @@ $breakpoints: (
     @warn "El breakpoint #{$breakpoint} no existe en \$breakpoints.";
   }
 }
+
+// responsive-grid//
+@mixin responsive-grid($min: 250px, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
