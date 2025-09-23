@@ -1,0 +1,47 @@
+.hero-pagina {
+  position: relative;
+  padding: 120px 0 80px;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-subtitulo {
+    font-size: 1.5rem;
+    color: #ffffffcc;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .hero-parrafo {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-botones {
+    display: flex;
+    gap: 10px;
+  }
+
+  .imagen-principal {
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+  }
+
+  @media (max-width: 768px) {
+    .imagen-principal {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

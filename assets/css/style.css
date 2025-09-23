@@ -368,4 +368,71 @@ i {
   color: #1f6bff;
 }
 
+.hero-pagina {
+  position: relative;
+  padding: 120px 0 80px;
+  overflow: hidden;
+}
+.hero-pagina .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-pagina .hero-subtitulo {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+.hero-pagina .hero-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hero-pagina .hero-parrafo {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+.hero-pagina .hero-botones {
+  display: flex;
+  gap: 10px;
+}
+.hero-pagina .imagen-principal {
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .hero-pagina .imagen-principal {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.hero-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.hero-index .hero-text {
+  max-width: 50%;
+  color: #fff;
+}
+.hero-index .hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero-index .hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.hero-index .hero-text .btns {
+  display: flex;
+  gap: 10px;
+}
+.hero-index .hero-img {
+  max-width: 45%;
+}
+
 /*# sourceMappingURL=style.css.map */
