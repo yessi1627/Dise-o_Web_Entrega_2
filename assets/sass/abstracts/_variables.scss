@@ -1,14 +1,25 @@
-// SASS de Variables//
+
+$color-primary: #1f6bff;      // Azul primario
+$color-secondary: #1d72d1;    // Azul secundario
+$color-dark: #171420;         // Fondos oscuros
+$color-bg: #1b293b;           // Fondo principal
+$color-white: #ffffff;        // Blanco
+$color-white-cc: #ffffffcc;   // Blanco con transparencia
+$color-light: #ffffff;        // Alias de blanco (para compatibilidad)
+$color-muted: #888;           // Texto apagado
+$color-gray: #aaa;            // Gris medio
+$color-gray-light: #cfd9e6;   // Gris claro
+$color-form-border: #8a9baa;  // Bordes de formularios
+
 
 $font-family: "Roboto", sans-serif;
-$max-width: 1200px;
-$container-padding: 2rem;
-$color-bg: #1B293B;        // Fondo principal
-$color-dark: #171420;      // Fondos oscuros
-$color-primary: #1f6bff;   // Azul primario
-$color-secondary: #1D72D1; // Azul secundario
-$color-white: #ffffff;
-$color-white-cc: #ffffffcc;
-$color-muted: #888;
-$color-gray: #aaa;
-$color-form-border: #8a9baa;
+
+
+$max-width: 1200px;       // Máximo ancho de contenedor
+$container-padding: 2rem; // Padding global de contenedor
+$faq-max-width: 800px;       // Ancho máximo de las tarjetas FAQ
+$faq-padding: 15px 20px;     // Padding de las tarjetas FAQ
+
+
+
+

@@ -354,9 +354,6 @@
     margin-bottom: 20px;
     line-height: 1.3;
   }
-
-  // botón dentro de la tarjeta (si tu HTML usa .btn)
-
 }
 
 /* responsive para contactenos-grid y recomendaciones */
@@ -366,3 +363,81 @@
   .contactenos-grid { grid-template-columns: 1fr; gap: 20px; }
   .tarjeta { margin-top: 40px; }
 }
+
+/* -----------------------
+   TESTIMONIOS Y CLIENTES
+   ----------------------- */
+.clientes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%; // ocupa suficiente espacio vertical para que quede centrado
+  padding: 40px 20px;
+}
+
+.container-clientes {
+  text-align: center;
+}
+
+.clientes-logos {
+  max-width: 100%;
+  height: auto;
+}
+/* ===========================
+   Tarjetas de FAQs
+   =========================== */
+
+.faqs-section {
+  padding: 40px;
+  background-color: #171420;
+  text-align: center;
+
+  .faqs-header {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+  }
+
+  .faqs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .faqs-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .faqs-icon {
+        font-size: 2rem;
+        color: #007bff; // azul para los íconos
+        margin-bottom: 15px;
+      }
+
+      .faqs-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000;
+      }
+
+      .faqs-text {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+

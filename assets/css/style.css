@@ -16,7 +16,7 @@ a {
   color: #1f6bff;
 }
 a:hover {
-  color: #1D72D1;
+  color: #1d72d1;
 }
 
 *, *::before, *::after {
@@ -46,7 +46,7 @@ a:hover {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #1B293B;
+  background-color: #1b293b;
   color: #ffffff;
 }
 
@@ -97,7 +97,7 @@ body {
   gap: 1.5rem;
 }
 .grid-beneficios .card {
-  background-color: #1B293B;
+  background-color: #1b293b;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@ body {
 }
 .grid-beneficios .card i {
   background-color: #ffffff;
-  color: #1D72D1;
+  color: #1d72d1;
   font-size: 24px;
   width: 60px;
   height: 60px;
@@ -142,7 +142,7 @@ body {
 .plan-card h3 {
   margin-bottom: 15px;
   font-size: 1.2rem;
-  color: #1D72D1;
+  color: #1d72d1;
 }
 .plan-card p {
   font-size: 0.95rem;
@@ -417,6 +417,120 @@ body {
     margin-top: 40px;
   }
 }
+/* -----------------------
+   TESTIMONIOS Y CLIENTES
+   ----------------------- */
+.clientes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%;
+  padding: 40px 20px;
+}
+
+.container-clientes {
+  text-align: center;
+}
+
+.clientes-logos {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===========================
+   Tarjetas de FAQs
+   =========================== */
+.faqs-section {
+  padding: 40px;
+  background-color: #171420;
+  text-align: center;
+}
+.faqs-section .faqs-header h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.faqs-section .faqs-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.faqs-section .faqs-container .faqs-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.faqs-section .faqs-container .faqs-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.faqs-section .faqs-container .faqs-card .faqs-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+.faqs-section .faqs-container .faqs-card .faqs-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+.faqs-section .faqs-container .faqs-card .faqs-text {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* assets/sass/components/_faqs.scss */
+.seccion-faqs {
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+}
+.seccion-faqs .faq-item {
+  border: 1px solid #ffffff;
+}
+.seccion-faqs .faq-item.activo .faq-respuesta {
+  display: block;
+  background-color: #ffffff;
+}
+.seccion-faqs .faq-item.activo .faq-pregunta {
+  font-weight: bold;
+  color: #171420;
+  background-color: #ffffff;
+}
+.seccion-faqs .faq-item .faq-pregunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #cfd9e6;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.seccion-faqs .faq-item .faq-pregunta:hover {
+  background-color: #1f6bff;
+  color: #ffffff;
+}
+.seccion-faqs .faq-item .faq-pregunta .icono-faq {
+  color: #1f6bff;
+  font-size: 14px;
+}
+.seccion-faqs .faq-item .faq-respuesta {
+  display: none;
+  padding: 0 20px 15px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #171420;
+}
+
 /* Footer (copiado del CSS viejo) */
 .footer {
   position: relative;

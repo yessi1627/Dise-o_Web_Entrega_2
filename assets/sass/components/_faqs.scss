@@ -1,0 +1,56 @@
+/* assets/sass/components/_faqs.scss */
+@use '../abstracts/variables' as vars;
+
+.seccion-faqs {
+  max-width: vars.$faq-max-width;
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+
+  .faq-item {
+    border: 1px solid vars.$color-light;
+
+    &.activo {
+      .faq-respuesta {
+        display: block;
+        background-color: vars.$color-light;
+      }
+
+      .faq-pregunta {
+        font-weight: bold;
+        color: vars.$color-dark;
+        background-color: vars.$color-light;
+      }
+    }
+
+    .faq-pregunta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: vars.$faq-padding;
+      font-size: 16px;
+      color: vars.$color-gray-light;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: vars.$color-primary;
+        color: vars.$color-white;
+      }
+
+      .icono-faq {
+        color: vars.$color-primary;
+        font-size: 14px;
+      }
+    }
+
+    .faq-respuesta {
+      display: none;
+      padding: 0 20px 15px 20px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: vars.$color-dark;
+    }
+  }
+}
