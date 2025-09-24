@@ -485,6 +485,96 @@ body {
   line-height: 1.5;
 }
 
+.formulario-contacto-seccion {
+  background-color: #1B293B;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+.formulario-contacto-seccion .formulario-contacto-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  background-color: #243447;
+  padding: 40px;
+  border-radius: 12px;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda {
+  color: #ffffff;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #d1d5db;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario .formulario-contacto-doble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario input,
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario textarea {
+  padding: 12px;
+  border: 1px solid #3a4a5d;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario input::placeholder,
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario textarea::placeholder {
+  color: #9ca3af;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario input:focus,
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario textarea:focus {
+  outline: none;
+  border-color: #1d72d1;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario textarea {
+  resize: none;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario button {
+  background: #1d72d1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.formulario-contacto-seccion .formulario-contacto-izquierda .formulario-contacto-formulario button:hover {
+  background: #1554c5;
+}
+.formulario-contacto-seccion .formulario-contacto-derecha img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 576px) {
+  .formulario-contacto-contenedor {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .formulario-contacto-contenedor .formulario-contacto-derecha {
+    margin-top: 20px;
+  }
+}
 /* assets/sass/components/_faqs.scss */
 .seccion-faqs {
   max-width: 800px;

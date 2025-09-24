@@ -1,0 +1,106 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+.formulario-contacto-seccion {
+  background-color: #1B293B;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+
+  .formulario-contacto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // texto izquierda / imagen derecha
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    align-items: center;
+    background-color: #243447;
+    padding: 40px;
+    border-radius: 12px;
+  }
+
+  .formulario-contacto-izquierda {
+    color: vars.$color-white;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #d1d5db;
+    }
+
+    .formulario-contacto-formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .formulario-contacto-doble {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 12px;
+        border: 1px solid #3a4a5d;
+        border-radius: 8px;
+        background-color: #1e293b;
+        color: #fff;
+        font-size: 0.95rem;
+
+        &::placeholder {
+          color: #9ca3af;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #1d72d1;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      button {
+        background: #1d72d1;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #1554c5;
+        }
+      }
+    }
+  }
+
+  .formulario-contacto-derecha img {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+// Responsivo
+@include mixins.respond-to("mobile") {
+  .formulario-contacto-contenedor {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .formulario-contacto-derecha {
+      margin-top: 20px;
+    }
+  }
+}
