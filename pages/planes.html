@@ -51,99 +51,120 @@
        </section>
 
   <!-- Maquetación de carrusel de planes -->
-<section class="Container-general">
-<div class="carrusel">
-    <div class="container beneficios-header">
+<section class="container my-5">
+  <div class="text-center mb-4">
     <h2 class="titulo">Elige el plan que se adapta a tu ritmo</h2>
     <p class="subtitulo">No es solo hosting, es infraestructura pensada para tu negocio.</p>
+  </div>
 
-    <!-- Maquetación de tarjeta izquierda 2 -->
-    <div class="tarjeta tarjeta-izq tarjeta-izq-2">
-        <h3>Go Básico</h3>
-        <p>Ideal para sitios pequeños y proyectos personales.</p>
-        <img src="../assets/images/Servidor 1.svg" alt="Servidor básico">
-        <ul>
+  <div id="planCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Tarjeta 1 -->
+      <div class="carousel-item active">
+        <div class="card plan-card mx-auto">
+          <h3>Plan Starter</h3>
+          <p>Para proyectos personales y sitios web pequeños.</p>
+          <img src="../assets/images/Servidor 1.svg" alt="Servidor starter">
+          <ul>
             <li><i class="fa fa-check"></i> 1 GB RAM</li>
             <li><i class="fa fa-check"></i> 10 GB SSD</li>
             <li><i class="fa fa-check"></i> Soporte 24/7</li>
-        </ul>
-        <div class="precio">
+          </ul>
+          <div class="precio">
             <span class="descuento">Antes $15</span>
             <span class="valor">$10</span>
+          </div>
+          <button class="btn btn-primary">Comprar</button>
         </div>
-        <button>Comprar</button>
-    </div>
+      </div>
 
-    <!-- Maquetación de tarjeta izquierda 1 -->
-    <div class="tarjeta tarjeta-izq tarjeta-izq-1">
-        <h3>Go Emprendedor</h3>
-        <p>Perfecto para negocios pequeños y medianos.</p>
-        <img src="../assets/images/Servidor 2.svg" alt="Servidor emprendedor">
-        <ul>
+      <!-- Tarjeta 2 -->
+      <div class="carousel-item">
+        <div class="card plan-card mx-auto">
+          <h3>Plan Emprendedor</h3>
+          <p>Perfecto para negocios que recién inician.</p>
+          <img src="../assets/images/Servidor 2.svg" alt="Servidor emprendedor">
+          <ul>
             <li><i class="fa fa-check"></i> 2 GB RAM</li>
             <li><i class="fa fa-check"></i> 20 GB SSD</li>
             <li><i class="fa fa-check"></i> Dominio gratis</li>
-        </ul>
-        <div class="precio">
+          </ul>
+          <div class="precio">
             <span class="descuento">Antes $25</span>
             <span class="valor">$18</span>
+          </div>
+          <button class="btn btn-primary">Comprar</button>
         </div>
-        <button>Comprar</button>
-    </div>
+      </div>
 
-    <!-- Maquetación de tarjeta central -->
-    <div class="tarjeta tarjeta-central">
-        <h3>Go Corporativo</h3>
-        <p>Plan ideal para empresas que necesitan alto rendimiento.</p>
-        <img src="../assets/images/Servidor 3.svg" alt="Servidor corporativo">
-        <ul>
+      <!-- Tarjeta 3 -->
+      <div class="carousel-item">
+        <div class="card plan-card mx-auto">
+          <h3>Plan Corporativo</h3>
+          <p>Para empresas que requieren alto rendimiento.</p>
+          <img src="../assets/images/Servidor 3.svg" alt="Servidor corporativo">
+          <ul>
             <li><i class="fa fa-check"></i> 4 GB RAM</li>
             <li><i class="fa fa-check"></i> 50 GB SSD</li>
             <li><i class="fa fa-check"></i> Soporte prioritario</li>
-        </ul>
-        <div class="precio">
+          </ul>
+          <div class="precio">
             <span class="descuento">Antes $50</span>
             <span class="valor">$35</span>
+          </div>
+          <button class="btn btn-primary">Comprar</button>
         </div>
-        <button>Comprar</button>
-    </div>
+      </div>
 
-    <!-- Maquetación de tarjeta derecha 1 -->
-    <div class="tarjeta tarjeta-der tarjeta-der-1">
-        <h3>Go Premium</h3>
-        <p>Para proyectos grandes y con alta demanda de recursos.</p>
-        <img src="../assets/images/Servidor 1.svg" alt="Servidor premium">
-        <ul>
+      <!-- Tarjeta 4 -->
+      <div class="carousel-item">
+        <div class="card plan-card mx-auto">
+          <h3>Plan Premium</h3>
+          <p>Para proyectos grandes y de alto tráfico.</p>
+          <img src="../assets/images/Servidor 1.svg" alt="Servidor premium">
+          <ul>
             <li><i class="fa fa-check"></i> 8 GB RAM</li>
             <li><i class="fa fa-check"></i> 100 GB SSD</li>
             <li><i class="fa fa-check"></i> Seguridad avanzada</li>
-        </ul>
-        <div class="precio">
+          </ul>
+          <div class="precio">
             <span class="descuento">Antes $80</span>
             <span class="valor">$60</span>
+          </div>
+          <button class="btn btn-primary">Comprar</button>
         </div>
-        <button>Comprar</button>
-    </div>
+      </div>
 
-    <!-- Maquetación de tarjeta derecha 2 -->
-    <div class="tarjeta tarjeta-der tarjeta-der-2">
-        <h3>Go Ultra</h3>
-        <p>Máximo rendimiento y almacenamiento ilimitado.</p>
-        <img src="../assets/images/Servidor 2.svg" alt="Servidor ultra">
-        <ul>
+      <!-- Tarjeta 5 -->
+      <div class="carousel-item">
+        <div class="card plan-card mx-auto">
+          <h3>Plan Ultra</h3>
+          <p>Máximo rendimiento con almacenamiento ilimitado.</p>
+          <img src="../assets/images/Servidor 2.svg" alt="Servidor ultra">
+          <ul>
             <li><i class="fa fa-check"></i> 16 GB RAM</li>
             <li><i class="fa fa-check"></i> Almacenamiento ilimitado</li>
             <li><i class="fa fa-check"></i> Soporte VIP</li>
-        </ul>
-        <div class="precio">
+          </ul>
+          <div class="precio">
             <span class="descuento">Antes $120</span>
             <span class="valor">$90</span>
+          </div>
+          <button class="btn btn-primary">Comprar</button>
         </div>
-        <button>Comprar</button>
+      </div>
+
     </div>
-    </div>   
-</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#planCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#planCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 </section>
+
 
 <!-- Maquetación de recomendaciones -->
 <section class="recomendaciones-container">
@@ -154,7 +175,7 @@
         <p class="recomendacion-texto">
             Blogs, tiendas, portafolios, sistemas empresariales... Cada tipo de sitio necesita recursos distintos. Define tu propósito antes de elegir un plan.
         </p>
-        <button class="recomendacion-boton">Ver recomendación</button>
+        <button class="btn btn-primary">Ver recomendaciones</button>
     </div>
 
     <!-- Maquetación de tarjeta 2 -->
@@ -164,7 +185,7 @@
         <p class="recomendacion-texto">
             Un sitio personal no requiere lo mismo que una tienda con 10.000 visitas al mes. Evalúa el volumen de visitas para evitar caídas o lentitud.
         </p>
-        <button class="recomendacion-boton">Ver recomendación</button>
+        <button class="btn btn-primary">Ver recomendaciones</button>
     </div>
 
     <!-- Maquetación de tarjeta 3 -->
@@ -174,7 +195,7 @@
         <p class="recomendacion-texto">
             Si tu proyecto crecerá, elige un plan con capacidad de escalar fácilmente sin migraciones. Apuesta por flexibilidad desde el inicio.
         </p>
-        <button class="recomendacion-boton">Ver recomendación</button>
+        <button class="btn btn-primary">Ver recomendaciones</button>
     </div>
 
     <!-- Maquetación de tarjeta 4 -->
@@ -184,7 +205,7 @@
         <p class="recomendacion-texto">
             ¿Prefieres una gestión sencilla o controlar cada aspecto del servidor? Algunos planes incluyen paneles de control, otros acceso root.
         </p>
-        <button class="recomendacion-boton">Ver recomendación</button>
+       <button class="btn btn-primary">Ver recomendaciones</button>
     </div>
 </section>
   
